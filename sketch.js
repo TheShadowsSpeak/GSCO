@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
   background(102, 0, 102);  
-  drawSprites();
+  
 if(wall.x-car.x<(car.width+wall.width)/2){
 if(deformation>180){
   car.shapeColor = color(255,0,0);
@@ -28,4 +28,5 @@ if(deformation<100){
   car.shapeColor = color(255,0,0);
 }
 }
+drawSprites();
 }
